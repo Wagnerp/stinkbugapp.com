@@ -173,16 +173,20 @@
     <Content Include="Public\Styles\Images\logo-medium-no-bug.png" />
     <Content Include="Public\Styles\Images\logo-medium-no-text.png" />
     <Content Include="Public\Styles\Images\logo-medium.png" />
+    <Content Include="Public\Styles\Images\logo-no-text.png" />
     <Content Include="Public\Styles\Images\logo-small-no-bug.png" />
     <Content Include="Public\Styles\Images\logo.png" />
     <Content Include="Public\Styles\site.css" />
     <Content Include="robots.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Errors\Index.cshtml" />
