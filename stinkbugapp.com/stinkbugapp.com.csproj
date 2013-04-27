@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -132,6 +133,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Errors\Index.cshtml" />
+    <Content Include="Views\Shared\Layouts\Errors.cshtml" />
+    <Content Include="Views\Errors\_ViewStart.cshtml" />
+    <Content Include="Views\Errors\404.cshtml" />
+    <Content Include="Views\Errors\500.cshtml" />
+    <Content Include="Views\Errors\400.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
