@@ -38,6 +38,7 @@ obj/
 # FederationMetadata\
 ## Multiple applications of FedUtil will result in *.backup.1, *.backup.2, etc., files for Web.config and FederationMetadata.xml
 *.backup.*
+.sass-cache/
 
 # NuGet
 # Also consider letting NuGet automatically restore missing packages for you:
