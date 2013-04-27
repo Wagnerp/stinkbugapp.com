@@ -20,9 +20,33 @@
 
 <body>
 
-    @RenderPage("../Header.cshtml")
-    @RenderBody()
-    @RenderPage("../Footer.cshtml")
+    @* Header *@
+     <div class="container">
+        <div class="row">
+            <div class="span12">
+                @RenderPage("../Header.cshtml")
+            </div>
+        </div>
+    </div>
+
+    @* Body *@
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+
+    @* Footer *@
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                @RenderPage("../Footer.cshtml")
+            </div>
+        </div>
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
