@@ -8285,3 +8285,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     overflow: visible !important;
   }
 }
+/* line 7, Sass/site.sass */
+body {
+  background: #3c4e20;
+}
