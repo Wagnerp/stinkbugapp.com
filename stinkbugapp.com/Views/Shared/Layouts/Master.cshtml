@@ -5,39 +5,42 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>@(ViewBag.Title ?? "Stink Bug")</title>
-        <meta name="description" content="@(ViewBag.Title ?? "Stink Bug")">
-        <meta name="viewport" content="width=device-width">
-        <link href="~/public/styles/site.css" rel="stylesheet" />
-        @RenderPage("../Meta.cshtml")
-        @RenderSection("Head", required: false)
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>@(ViewBag.Title ?? "Stink Bug")</title>
+    <meta name="description" content="@(ViewBag.Title ?? "Stink Bug")">
+    <meta name="viewport" content="width=device-width">
+    <link href="~/public/styles/site.css" rel="stylesheet" />
+    @RenderPage("../Meta.cshtml")
+    @RenderSection("Head", required: false)
+</head>
 
-    <body>
+<body>
 
-        @RenderPage("../Header.cshtml")
-        @RenderBody()
-        @RenderPage("../Footer.cshtml")
+    @RenderPage("../Header.cshtml")
+    @RenderBody()
+    @RenderPage("../Footer.cshtml")
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-        @RenderSection("Foot", required: false)
+    @RenderSection("Foot", required: false)
 
-        <script>
-            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-            (function (d, t) {
-                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                g.src = '//www.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g, s)
-            }(document, 'script'));
-        </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    </body>
+        ga('create', 'UA-40480167-1', 'stinkbugapp.com');
+        ga('send', 'pageview');
+    </script>
+
+</body>
 
 </html>
