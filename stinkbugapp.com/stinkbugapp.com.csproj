@@ -163,6 +163,14 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="config.rb" />
+    <Content Include="Public\Styles\Images\bg-purple-glow.png" />
+    <Content Include="Public\Styles\Images\bg-purple.png" />
+    <Content Include="Public\Styles\Images\bg.png" />
+    <Content Include="Public\Styles\Images\glyphicons-halflings-white.png" />
+    <Content Include="Public\Styles\Images\glyphicons-halflings.png" />
+    <Content Include="Public\Styles\Images\logo-nenvy.png" />
+    <Content Include="Public\Styles\Sass\_footer.sass" />
+    <Content Include="Public\Styles\Sass\_overrides.sass" />
     <None Include="Public\Styles\Sass\site.sass" />
     <Content Include="lib\CodeScales.Http.dll" />
     <Content Include="Public\Styles\Images\apple-touch-icon-114x114-precomposed.png" />
@@ -195,6 +203,8 @@
     <Content Include="Views\Errors\404.cshtml" />
     <Content Include="Views\Errors\500.cshtml" />
     <Content Include="Views\Errors\400.cshtml" />
+    <Content Include="Public\Styles\Sass\_header.sass" />
+    <Content Include="Views\Shared\Global.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
