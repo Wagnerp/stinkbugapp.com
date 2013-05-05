@@ -1,0 +1,48 @@
+﻿@import "compass/layout"
+
+$footerHeight: 286px
+
++sticky-footer($footerHeight, ".container-root", ".container-footer-push", ".container-footer")
+
+.container-footer
+
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+
+  height: $footerHeight - 42px
+
+#resources
+  
+  margin-top: 55px
+
+  h2
+
+    font:
+      family: 'Source Sans Pro', sans-serif
+      weight: normal
+      size: 35px
+
+    text-transform: uppercase
+    color: $brown
+    margin-top: 0
+
+    span
+      font-family: 'Pacifico', cursive
+      font-size: 50px
+      text-transform: none
+      color: $purple
+      position: relative
+      top: -2px
+      display: inline-block
+      padding: 0 16px 0 6px 
+      +transform(rotate(-9deg))
+
+  em
+
+    font-style: normal
+    color: $orange
+
+  article
+
+    border-bottom: 2px dashed #ddd
+    padding-bottom: 35px

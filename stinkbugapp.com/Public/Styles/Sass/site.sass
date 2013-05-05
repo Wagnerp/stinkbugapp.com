@@ -1,8 +1,86 @@
-﻿@import "bootstrap"
+﻿$green:  #3C4E20
+$red:    lighten(#84021F, 10%)
+$orange: #EC7F00
+$beige:  #FFD18C
+$white:  #FBF7F1
+$brown:  #4D2209
+$purple: #41245A
+
+@import "overrides"
+@import "bootstrap"
 @import "bootstrap-responsive"
+@import "compass/css3"
+@import "compass/utilities"
 
-$primary: #3c4e20
-$secondary: #677f2a
-
+// General, Misc
 body
-  background: $primary
+  background: $white image-url("bg.png")
+
+.bg-purple
+  background-color: $purple
+  +background(linear-gradient(top, $purple, darken($purple, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $purple, darken($purple, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-green
+  background-color: $green
+  +background(linear-gradient(top, $green, darken($green, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $green, darken($green, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-red
+  background-color: $red
+  +background(linear-gradient(top, $red, darken($red, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $red, darken($red, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-orange
+  background-color: $orange
+  +background(linear-gradient(top, $orange, darken($orange, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $orange, darken($orange, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-white
+  background-color: $white
+  +background(linear-gradient(top, $white, darken($white, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $white, darken($white, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-beige
+  background-color: $beige
+  +background(linear-gradient(top, $beige, darken($beige, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $beige, darken($beige, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-brown
+  background-color: $brown
+  +background(linear-gradient(top, $brown, darken($brown, 3%)))
+
+  &.bg-reverse
+    +background(linear-gradient(bottom, $brown, darken($brown, 3%)))
+    +box-shadow(inset 0 1px 0 rgba(255, 255, 255, .35))
+
+.bg-shadow
+  +box-shadow(0 1px 3px rgba(0, 0, 0, .35))
+  position: relative
+  z-index: 1
+
+
+.no-border
+  border: none!important
+  box-shadow: none!important
+
+@import "header"
+@import "footer"

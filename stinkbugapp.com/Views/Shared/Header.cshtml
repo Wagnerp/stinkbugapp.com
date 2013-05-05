@@ -1,1 +1,13 @@
-﻿@RenderPage("Navigation.cshtml")
+﻿<div id="header">
+    <header class="container">
+        <div class="row">
+            <nav id="logo" class="span2">
+                <a title="Full-cycle, collaborative quality assurance!" href="~/">Stink Bug</a>
+                <div class="logo-glow"></div>
+            </nav>
+            <nav id="nav" class="span10">
+                @RenderPage("Navigation.cshtml")
+            </nav>
+        </div>
+    </header>
+</div>

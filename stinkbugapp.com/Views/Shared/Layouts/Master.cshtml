@@ -5,7 +5,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -13,6 +15,7 @@
     <title>@(ViewBag.Title ?? "Stink Bug")</title>
     <meta name="description" content="@(ViewBag.Title ?? "Stink Bug")">
     <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Pacifico' rel='stylesheet' type='text/css'>
     <link href="~/public/styles/site.css" rel="stylesheet" />
     @RenderPage("../Meta.cshtml")
     @RenderSection("Head", required: false)
@@ -20,33 +23,31 @@
 
 <body>
 
-    @* Header *@
-     <div class="container">
-        <div class="row">
-            <div class="span12">
-                @RenderPage("../Header.cshtml")
-            </div>
-        </div>
-    </div>
+    <div class="container-root container-background">
 
-    @* Body *@
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                @RenderBody()
-            </div>
+        @* Meta Bar *@
+        @RenderPage("../Global.cshtml")
+
+        <div class="container-fluid">
+
+            @* Header *@
+            @RenderPage("../Header.cshtml")
+
+            @* Body *@
+            @RenderBody()
+
+            <div class="container-footer-push"></div>
         </div>
     </div>
 
 
     @* Footer *@
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                @RenderPage("../Footer.cshtml")
-            </div>
-        </div>
+    <div class="container-fluid container-footer bg-white bg-reverse">
+        @RenderPage("../Footer.cshtml")
     </div>
+
+    @* Meta Bar *@
+    @RenderPage("../Global.cshtml")
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

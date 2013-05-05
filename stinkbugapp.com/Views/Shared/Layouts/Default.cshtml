@@ -2,5 +2,24 @@
     Layout = "Master.cshtml";
 }
 
-@RenderSection("SideBar", required: false)
-@RenderBody()
+<div id="body">
+    <section class="container">
+        <div class="row">
+            @if (IsSectionDefined("SideBar"))
+            {
+                <aside id="sidebar" class="span4">
+                    @RenderSection("SideBar", required: false)
+                </aside>
+                <article id="content" class="span8">
+                    @RenderBody()
+                </article>
+            }
+            else
+            {
+                <article id="content" class="span12">
+                    @RenderBody()
+                </article>
+            }
+        </div>
+    </section>
+</div>
