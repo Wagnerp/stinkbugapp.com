@@ -164,6 +164,8 @@
     <Content Include="apple-touch-icon-57x57-precomposed.png" />
     <Content Include="apple-touch-icon-72x72-precomposed.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-startup-image-640x1096.png" />
+    <Content Include="apple-touch-startup-image-640x920.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="config.rb" />
