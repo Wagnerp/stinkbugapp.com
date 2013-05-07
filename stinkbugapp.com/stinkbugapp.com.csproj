@@ -159,7 +159,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="apple-touch-icon.png" />
+    <Content Include="apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="config.rb" />
@@ -187,6 +191,7 @@
     <Content Include="Public\Styles\Images\logo.png" />
     <Content Include="Public\Styles\site.css" />
     <Content Include="robots.txt" />
+    <Content Include="startup.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
