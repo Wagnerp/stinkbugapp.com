@@ -178,11 +178,6 @@
     <Content Include="Public\Styles\Sass\_responsive.sass" />
     <None Include="Public\Styles\Sass\site.sass" />
     <Content Include="lib\CodeScales.Http.dll" />
-    <Content Include="Public\Styles\Images\apple-touch-icon-114x114-precomposed.png" />
-    <Content Include="Public\Styles\Images\apple-touch-icon-144x144-precomposed.png" />
-    <Content Include="Public\Styles\Images\apple-touch-icon-57x57-precomposed.png" />
-    <Content Include="Public\Styles\Images\apple-touch-icon-72x72-precomposed.png" />
-    <Content Include="Public\Styles\Images\apple-touch-icon-precomposed.png" />
     <Content Include="Public\Styles\Images\logo-medium-no-bug.png" />
     <Content Include="Public\Styles\Images\logo-medium-no-text.png" />
     <Content Include="Public\Styles\Images\logo-medium.png" />
