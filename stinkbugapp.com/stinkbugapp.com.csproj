@@ -186,7 +186,6 @@
     <Content Include="Public\Styles\Images\logo.png" />
     <Content Include="Public\Styles\site.css" />
     <Content Include="robots.txt" />
-    <Content Include="startup.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
