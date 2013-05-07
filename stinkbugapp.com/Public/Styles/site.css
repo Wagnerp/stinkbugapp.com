@@ -8649,3 +8649,14 @@ html, body {
   border-bottom: 2px dashed #dddddd;
   padding-bottom: 35px;
 }
+
+@media (max-width: 767px) {
+  /* line 2, Sass/_responsive.sass */
+  body {
+    padding: 0;
+  }
+  /* line 5, Sass/_responsive.sass */
+  body > div.container-fluid, body .container-root > div.container-fluid {
+    padding: 0 20px;
+  }
+}
