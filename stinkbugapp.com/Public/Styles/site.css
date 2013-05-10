@@ -8446,7 +8446,7 @@ body {
   z-index: 1;
 }
 
-/* line 81, Sass/site.sass */
+/* line 80, Sass/site.sass */
 .no-border {
   border: none !important;
   box-shadow: none !important;
@@ -8589,25 +8589,25 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -286px;
+  margin-bottom: -400px;
 }
 /* line 18, ../../../../../Utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 .container-root .container-footer-push {
-  height: 286px;
+  height: 400px;
 }
 
 /* line 20, ../../../../../Utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 .container-footer {
   clear: both;
   position: relative;
-  height: 286px;
+  height: 400px;
 }
 
 /* line 7, Sass/_footer.sass */
 .container-footer {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
-  height: 244px;
+  height: 358px;
 }
 
 /* line 14, Sass/_footer.sass */
